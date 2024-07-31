@@ -12,7 +12,7 @@ describe('The sanity test suite for travel site', () => {
       cy.get('#input-start').should("be.visible")
       cy.get('#input-end').should("be.visible")
       cy.get('#info').should("be.visible")
-      cy.get('.checkbox-row > .m-r-45').should("be.visible")
+      cy.get('.checkbox-row > .m-r-45').should("be.visible").and("have.text", "add a flight")
       cy.get('.checkbox-row > :nth-child(2)').should("be.visible")
       cy.get('#tab1 > form > .btn-submit').should("be.visible")
     })
